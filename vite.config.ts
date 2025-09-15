@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => ({
   // name is "portfolio", the site will be served from /portfolio/.
   // Adjust this if you deploy under a different repository name or a custom domain.
   base: "/neelzanwar/",
+  build: {
+    // Build to docs/ so GitHub Pages can serve from main branch /docs
+    outDir: "docs",
+    emptyOutDir: true,
+  },
   server: {
     host: "::",
     port: 8080,
@@ -16,6 +21,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
+
       "@": path.resolve(__dirname, "./src"),
     },
   },
