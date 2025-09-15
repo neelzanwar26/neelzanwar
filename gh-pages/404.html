@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function() {
+        var base = "/neelzanwar/";
+        var loc = window.location;
+        if (loc.pathname.startsWith(base)) {
+          var path = loc.pathname.slice(base.length);
+          var newUrl = base + "?p=" + encodeURIComponent(path + loc.hash);
+          loc.replace(newUrl);
+        } else {
+          loc.replace(base);
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
