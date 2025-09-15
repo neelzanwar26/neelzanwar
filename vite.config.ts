@@ -5,6 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Set the correct base path for GitHub Pages deployment. If your repository
+  // name is "portfolio", the site will be served from /portfolio/.
+  // Adjust this if you deploy under a different repository name or a custom domain.
+  base: "/neelzanwar/",
   server: {
     host: "::",
     port: 8080,
