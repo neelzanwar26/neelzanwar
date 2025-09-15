@@ -15,7 +15,7 @@ const Projects = () => {
       title: "Text Analysis for Indian Sentiment",
       description: "This project focuses on sentiment analysis of Hindi and Hinglish text using Natural Language Processing (NLP) and Machine Learning. It classifies text into Positive, Negative, and Neutral categories, leveraging custom datasets and pre-trained transformer models. The system is equipped with a user-friendly GUI and visualizations to present sentiment trends, making it useful for applications in media, e-commerce, government policy analysis, and research.",
       tags: ["Python", "PyQt5", "Hugging Face", "TensorFlow", "Keras", "Pandas", "Matplotlib"],
-      reportUrl: "https://docs.google.com/document/d/16ICXks848vrKYb39wKiusuL9s0YgT7Ui/edit"
+      reportUrl: "https://drive.google.com/file/d/1-x9gONMLyQ0EGhOkv41u-rXV0IADJXaB/view?usp=sharing"
     },
     {
       title: "Chat-With-Neel",
