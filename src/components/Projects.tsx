@@ -6,6 +6,18 @@ import { FileText, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "TerraGuard_AI",
+      description: "Built a modular Python test automation framework featuring a comprehensive CLI runner and YAML config-driven execution. Engineered professional reporting functionality generating HTML & JSON reports via Jinja2 templating natively consumed by CI pipelines. Developed 3 demo test suites covering complex test cases and achieved >80% test coverage with integrated automated GitHub Actions CI workflow.",
+      tags: ["Python", "YAML", "Jinja2", "CI/CD", "CLI", "Automation"],
+      githubUrl: "https://github.com/neelzanwar26/TerraGuard_AI"
+    },
+    {
+      title: "PyDiskWatch",
+      description: "Engineered a cross-platform CLI utility in Python using psutil to proactively monitor core storage health and partition metrics across Linux and Windows servers. Developed an OS-level anomaly detection engine to identify low-level I/O errors prior to hardware failures. Architected an automated reporting and alerting system with Jinja2, achieving 80%+ unit test coverage fully integrated into a GitHub Actions CI/CD pipeline.",
+      tags: ["Python", "psutil", "CLI", "CI/CD", "pytest", "System Monitoring"],
+      githubUrl: "https://github.com/neelzanwar26/pydiskwatch"
+    },
+    {
       title: "Book Exchange Website",
       description: "The Book Exchange Website is a platform designed to encourage sustainable reading habits by allowing users to exchange, donate, or borrow books online. The system provides features like browsing available books, searching by title/genre, and directly contacting book owners. It aims to create a community-driven space where readers can recycle and share books, reducing waste while making literature more accessible.",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Django", "SQLite", "MySQL"],
@@ -57,13 +69,13 @@ const ProjectCard = ({ project }: { project: any }) => (
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
     </div>
-    
+
     <div className="p-6">
       <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
       <p className="text-muted-foreground mb-4 leading-relaxed">
         {project.description}
       </p>
-      
+
       <div className="flex flex-wrap gap-2 mb-4">
         {project.tags.map((tag: string) => (
           <Badge key={tag} variant="secondary" className="hover:bg-primary/20">
@@ -71,11 +83,11 @@ const ProjectCard = ({ project }: { project: any }) => (
           </Badge>
         ))}
       </div>
-      
+
       <div className="flex gap-3">
         {project.reportUrl && (
-          <Button 
-            size="sm" 
+          <Button
+            size="sm"
             className="bg-gradient-to-r from-primary to-secondary"
             onClick={() => window.open(project.reportUrl, '_blank')}
           >
@@ -84,8 +96,8 @@ const ProjectCard = ({ project }: { project: any }) => (
           </Button>
         )}
         {project.githubUrl && (
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             size="sm"
             onClick={() => window.open(project.githubUrl, '_blank')}
           >
