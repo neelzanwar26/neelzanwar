@@ -32,7 +32,7 @@ const Hero = () => {
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary-glow hover:to-secondary-glow glow-primary"
               asChild
             >
-              <a href="https://drive.google.com/file/d/1jMqYSLKZafk-yQH5An5lWeVEM8tPMAZ_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1tNjVXLH3Sn29nZbwPfteJT_Z98dt2beJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 My Resume
               </a>
             </Button>
