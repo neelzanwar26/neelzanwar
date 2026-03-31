@@ -62,6 +62,13 @@ const Skills = () => {
               status="Active"
               url="https://drive.google.com/file/d/1NCweHUAL-xFegbxIfI6tg4Npolt3PFMO/view?usp=sharing"
             />
+            <CertificationCard
+              title="Google AI-ML Virtual Internship"
+              issuer="EduSkills Foundation"
+              date="2024"
+              status="Completed"
+              url="https://certificate.eduskillsfoundation.org/verify/4545aff9c7f4bf5bc554/4545aff9c7f4bf5bc554"
+            />
           </div>
         </div>
       </div>
